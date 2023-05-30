@@ -73,7 +73,7 @@ void updateTFT()
 {
 
   String freq = String(clk_1_frequency-IF_FILTER_PEAK);
-  tft.drawString(freq,60,30,2);
+  tft.drawString(freq+"+IF",60,30,2);
 
   freq = String(clk_2_frequency);
   tft.drawString(freq,60,50,2);
